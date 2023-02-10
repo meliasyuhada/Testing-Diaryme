@@ -22,24 +22,29 @@ class PythonTrueCRUD (unittest.TestCase):
         elem.send_keys("12345678")
         self.driver.save_screenshot(
             "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s1\ss1.png")
+        time.sleep(3)
         elem = driver.find_element(
             By.XPATH, "//button[normalize-space()='Login']")
         elem.click()
+        time.sleep(3)
         self.driver.save_screenshot(
             "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s1\ss2.png")
         elem = driver.find_element(
             By.XPATH, "//i[@class='bi bi-chevron-down ms-auto']")
         elem.click()
+        time.sleep(3)
         self.driver.save_screenshot(
             "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s1\ss3.png")
         elem = driver.find_element(
             By.XPATH, "//span[normalize-space()='Data']")
         elem.click()
+        time.sleep(3)
         self.driver.save_screenshot(
             "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s1\ss4.png")
         elem = driver.find_element(
             By.XPATH, "//a[normalize-space()='Add Post']")
         elem.click()
+        time.sleep(3)
         self.driver.save_screenshot(
             "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s1\ss5.png")
         elem = driver.find_element(By.ID, "cover")
@@ -71,6 +76,7 @@ class PythonTrueCRUD (unittest.TestCase):
             By.XPATH, "(//button[normalize-space()='Publish'])[1]")
         elem.click()
         time.sleep(3)
+        self.driver.save_screenshot("s11.png")
         self.assertNotIn("Faild.", driver.page_source)
 
 

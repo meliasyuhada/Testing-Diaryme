@@ -17,9 +17,9 @@ class PythonContact (unittest.TestCase):
         target = driver.find_element(By.XPATH, "(//h2[normalize-space()='Contact'])[1]")
         driver.execute_script("arguments[0].scrollIntoView()", target)
         time.sleep(2)
-        driver.find_element(By.XPATH, "(//input[@id='name'])[1]").send_keys("Liana")
+        driver.find_element(By.XPATH, "(//input[@id='name'])[1]").send_keys("Liana123")
         # time.sleep(2)
-        driver.find_element(By.XPATH, "(//input[@id='email'])[1]").send_keys("pecintasastra55@gmail.com")
+        driver.find_element(By.XPATH, "(//input[@id='email'])[1]").send_keys("pecintasastra55gmail.com")
         # time.sleep(2)
         driver.find_element(By.XPATH, "(//input[@id='subject'])[1]").send_keys("Tolong lihat aku")
         # time.sleep(2)
@@ -28,7 +28,7 @@ class PythonContact (unittest.TestCase):
         time.sleep(2)
         driver.find_element(By.XPATH, "(//button[normalize-space()='Send Message'])[1]").click()
         self.driver.save_screenshot("ss3.png")
-        time.sleep(4)
+        time.sleep(2)
 
 
 if __name__ == "__main__":

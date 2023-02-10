@@ -1,0 +1,5 @@
+cara memanggil atau membuat report dari 3 testcase atau lebih.
+
+1. masuk ke folder testcase yang akan diuji.
+2. masukkan
+   => pytest --html=report.html --self-contained-html TcLogin.py, TcLS1.py, TcLS2.py
