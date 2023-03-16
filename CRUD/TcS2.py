@@ -7,11 +7,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 import time
 
 
-class PythonTrueCRUD (unittest.TestCase):
+class PythonFalseeCRUD (unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
 
-    def test_truecrud_in_python(self):
+    def test_falseecrud_in_python(self):
         driver = self.driver
         driver.get("https://diaryme.site/login")
         driver.maximize_window()
@@ -47,31 +47,6 @@ class PythonTrueCRUD (unittest.TestCase):
         time.sleep(3)
         self.driver.save_screenshot(
             "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s2\ss5.png")
-        # elem = driver.find_element(By.ID, "cover")
-        # elem.send_keys("D:\Kuliah\kode\disain web kuliah\minggu ketiga\link1.html")
-        # time.sleep(3)
-        # self.driver.save_screenshot(
-        #     "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s2\ss6.png")
-        # elem = driver.find_element(By.XPATH, "//input[@name='title']")
-        # elem.send_keys()
-        # time.sleep(3)
-        # self.driver.save_screenshot(
-        #     "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s2\ss7.png")
-        # elem = driver.find_element(By.XPATH, "(//textarea[@id='desc'])[1]")
-        # elem.send_keys()
-        # time.sleep(3)
-        # self.driver.save_screenshot(
-        #     "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s2\ss8.png")
-        # elem = Select(driver.find_element(By.ID, "category"))
-        # elem.select_by_visible_text()
-        # time.sleep(3)
-        # self.driver.save_screenshot(
-        #     "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s2\ss9.png")
-        # elem = Select(driver.find_element(By.ID, "tag"))
-        # elem.select_by_visible_text()
-        # time.sleep(3)
-        # self.driver.save_screenshot(
-        #     "C:\python_selenium\PythonSeleniumProject1\Testing-Diaryme\ss\crud\s2\ss10.png")
         elem = driver.find_element(
             By.XPATH, "(//button[normalize-space()='Publish'])[1]")
         elem.click()

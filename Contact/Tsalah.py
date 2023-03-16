@@ -4,11 +4,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
-class PythonContact (unittest.TestCase):
+class PythonContactF (unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
 
-    def test_contact_in_python(self):
+    def test_contactf_in_python(self):
         driver = self.driver
         driver.get("https://diaryme.site/")
         driver.maximize_window()

@@ -7,11 +7,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 import time
 
 
-class PythonTrueCRUD (unittest.TestCase):
+class PythonFalseCRUD (unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
 
-    def test_truecrud_in_python(self):
+    def test_falsecrud_in_python(self):
         driver = self.driver
         driver.get("https://diaryme.site/login")
         driver.maximize_window()
